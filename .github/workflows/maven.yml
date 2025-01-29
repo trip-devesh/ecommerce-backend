@@ -44,4 +44,4 @@ jobs:
           environment_name: ${{ secrets.EB_ENVIRONMENT_NAME }}
           version_label: "${{ github.run_number }}"  # Unique version label
           region: us-west-1
-          deployment_package: target/ecommerce-0.0.1-SNAPSHOT.jar
+          deployment_package: target/ecom-0.0.1-SNAPSHOT.jar
