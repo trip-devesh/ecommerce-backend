@@ -31,7 +31,6 @@ public class ProductController {
         return cartItemRepository.save(cartItem);
     }
 
-    // Fetch all items in the cart
     @GetMapping("/cart")
     public List<CartItem> getCartItems() {
         return cartItemRepository.findAll();
