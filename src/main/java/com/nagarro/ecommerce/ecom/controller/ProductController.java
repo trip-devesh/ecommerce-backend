@@ -26,7 +26,6 @@ public class ProductController {
         return productRepository.findAll();
     }
 
-    // Add a product to the cart
     @PostMapping("/cart")
     public CartItem addToCart(@RequestBody CartItem cartItem) {
         return cartItemRepository.save(cartItem);
